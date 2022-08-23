@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
@@ -16,7 +15,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <div className="bg-green-200">test</div>
         </a>
+        
       </header>
     </div>
   );
