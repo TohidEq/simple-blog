@@ -1,18 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import Footer from './components/Footer';
+import Welcome from './components/Welcome';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <nav className='bg-darck-c-2 text-white-c'>
-        <h2>Navigation</h2>
-        
-        
-        
-        
-        
-      </nav>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+
+          <Routes>
+            <Route path='/' element={<Welcome/>}/>
+            <Route path='/home' element={<Home/>}/>
+          </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
