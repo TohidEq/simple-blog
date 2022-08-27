@@ -4,11 +4,14 @@
             h-16
             fixed
             top-0
-            w-full;
-
-    
+            w-full
+            transition-all
+            duration-150;    
 }
 
+.nav-hide{
+    @apply -top-16
+}
 
 /* move down 64 px*/
 body{
@@ -27,9 +30,34 @@ body{
         h-full
         px-1;
 }
-.nav-links a{
-    @apply pl-5;
+.navbar h2{
+    @apply text-xl font-semibold
+        hidden md:contents
+        transition-colors duration-150
+        fill-darck-c-2
+        hover:text-hover-c active:text-clicked-c;
 }
+
+.nav-links a{
+    @apply ml-5 z-10
+        px-1.5 py-1
+        text-white-c
+        text-xl
+        font-medium
+        rounded-sm
+        transition-all
+        duration-150;
+}
+.nav-links a:hover{
+    @apply bg-hover-c text-darck-c-2;
+}
+.nav-links a:active{
+    @apply bg-clicked-c text-darck-c-2;  
+}
+
+
+
+
 
 .nav-logo{
     @apply flex 
@@ -40,8 +68,16 @@ body{
     @apply w-12 h-12
         bg-white-c
         rounded-full
-        fill-darck-c-2;
+        transition-colors duration-150
+        fill-darck-c-2
+        hover:bg-hover-c active:bg-clicked-c;
 }
+
+
+
+
+
+
 
 
 

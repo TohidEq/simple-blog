@@ -13,7 +13,8 @@ module.exports = {
       'darck-c-1' : "#8E8B82",
       'white-c': "#F3F3F3",
       'dead-c': "#DCDCD9",
-      'hover-c': "#E9DCBE"
+      'hover-c': "#E9DCBE",
+      'clicked-c': "#F1D28B"
 
 
     },
