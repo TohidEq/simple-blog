@@ -528,10 +528,6 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -609,8 +605,8 @@ body {
   border-radius: 0.125rem;
   padding-left: 0.375rem;
   padding-right: 0.375rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
@@ -664,3 +660,187 @@ body {
   background-color: rgb(241 210 139 / var(--tw-bg-opacity));
 }
 
+.welcome {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .welcome {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .welcome {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .welcome {
+    max-width: 1536px;
+  }
+}
+
+.welcome {
+  margin-left: auto;
+  margin-right: auto;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.navbar .welcome {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .welcome {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .welcome {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .welcome {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+
+.welcome * {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.welcome h1 {
+  position: relative;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity));
+}
+
+.welcome-img {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .welcome-img {
+    position: absolute;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome-img {
+    width: 24rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .welcome-img {
+    width: 768px;
+  }
+}
+
+.welcome-text-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .welcome-text-box {
+    justify-content: flex-end;
+  }
+}
+
+.welcome-text-msg {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1280px) {
+  .welcome-text-msg {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.welcome-text-box a {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 200px;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 52 52 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
+}
+
+.welcome-text-box a:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 220 190 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity));
+}
+
+.welcome-text-box a:active {
+  --tw-translate-y: -0.125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 210 139 / var(--tw-bg-opacity));
+}
+
+.welcome-text-box a:hover{
+  box-shadow: 0px 4px 0px rgba(0,0, 0, 0.40)
+}
+
+.welcome-text-box a:active{
+  box-shadow: 0px 2px 5px rgba(0,0, 0, 0.25)
+}

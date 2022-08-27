@@ -1,0 +1,52 @@
+.welcome {
+    @apply container mx-auto
+            lg:px-24 xl:px-32 2xl:px-44
+            transition-all duration-150;
+}
+.welcome *{
+    @apply transition-all duration-150
+}
+.welcome h1{
+    @apply 
+        text-5xl font-medium relative
+        text-darck-c-2
+        text-center
+        my-7;
+}
+.welcome-img {
+    @apply 
+        relative w-full 
+        md:w-80 md:absolute 
+        lg:w-96 xl:w-[768px];
+}
+
+.welcome-text-box {
+    @apply  flex justify-center
+            md:justify-end;
+}
+.welcome-text-msg{
+    @apply  text-center
+            text-3xl font-normal
+            xl:my-10;
+}
+.welcome-text-box a{
+    @apply block max-w-[200px]
+        my-5
+        mx-auto
+        bg-darck-c-2 text-white-c
+        text-2xl font-normal
+        py-1 rounded
+        relative
+        hover:-translate-y-1  
+        hover:bg-hover-c hover:text-darck-c-2
+
+        active:bg-clicked-c 
+        active:-translate-y-0.5
+        ;
+}
+.welcome-text-box a:hover{
+    box-shadow: 0px 4px 0px rgba(0,0, 0, 0.40)
+}
+.welcome-text-box a:active{
+    box-shadow: 0px 2px 5px rgba(0,0, 0, 0.25)
+}

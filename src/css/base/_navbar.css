@@ -40,7 +40,7 @@ body{
 
 .nav-links a{
     @apply ml-5 z-10
-        px-1.5 py-1
+        px-1.5 py-0
         text-white-c
         text-xl
         font-medium
