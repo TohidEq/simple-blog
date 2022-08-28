@@ -1,0 +1,84 @@
+.home {
+    @apply container mx-auto
+            px-1 md:px-0
+            transition-all duration-150;
+}
+.home *{
+    @apply transition-all duration-150
+}
+.home h1{
+    @apply 
+        text-5xl font-medium relative
+        text-darck-c-2
+        text-center
+        my-7;
+}
+
+
+.home-cards{
+    @apply grid
+        sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+        gap-x-2 gap-y-3
+        
+}
+/*
+    home-cards{
+        home-card > card-title
+                card-texts >
+                    (card-text
+                    card-info >
+                        card-author ---  card-date)
+    }
+*/
+
+
+.home-card {
+    @apply bg-darck-c-2 text-white-c rounded  relative
+
+        hover:-translate-y-1  
+        hover:bg-opacity-90
+        hover:text-hover-c
+
+        active:-translate-y-0.5
+        active:bg-opacity-100
+        active:text-white-c
+}
+.home-card:hover{
+    box-shadow: 0px 4px 0px rgba(0,0, 0, 0.40)
+}
+.home-card:active{
+    box-shadow: 0px 2px 5px rgba(0,0, 0, 0.25)
+}
+
+
+
+.card-title {
+    @apply text-3xl md:text-4xl p-2
+}
+.card-texts {
+    @apply bg-dead-c text-darck-c-2 p-2  pb-1 rounded
+        hover:bg-hover-c
+        active:bg-clicked-c
+}
+.card-test {
+    @apply text-xl font-light h-auto sm:h-24
+}
+
+.card-info {
+    @apply flex justify-between text-sm
+}
+.card-author a{
+    @apply bg-darck-c-2 text-white-c rounded-sm 
+        px-0.5
+        hover:bg-darck-c-1
+        hover:text-darck-c-2
+        active:bg-white-c;
+    
+}
+
+
+
+
+
+
+
