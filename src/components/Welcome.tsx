@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 export interface IWelcomeProps {
 }
@@ -17,9 +18,9 @@ export default function Welcome (props: IWelcomeProps) {
             Start writing <br />
             your first blog post <br /> 
             right now. GLHF ^_^
-            <a href="#">
-              Create Post
-            </a>
+            
+            <Link to="/create">Create Post</Link>
+            
           </div>
           
         </div>

@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
 import Home from './components/Home';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Welcome/>}/>
             <Route path='/home' element={<Home/>}/>
+            <Route path='/create' element={<Create/>}/>
           </Routes>
 
         <Footer />
