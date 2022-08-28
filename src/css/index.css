@@ -1175,12 +1175,12 @@ body {
   color: rgb(52 52 52 / var(--tw-text-opacity));
 }
 
-.card-texts:hover {
+.group:hover .card-texts {
   --tw-bg-opacity: 1;
   background-color: rgb(233 220 190 / var(--tw-bg-opacity));
 }
 
-.card-texts:active {
+.group:active .card-texts {
   --tw-bg-opacity: 1;
   background-color: rgb(241 210 139 / var(--tw-bg-opacity));
 }

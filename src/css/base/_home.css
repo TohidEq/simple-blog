@@ -57,8 +57,8 @@
 }
 .card-texts {
     @apply bg-dead-c text-darck-c-2 p-2  pb-1 rounded
-        hover:bg-hover-c
-        active:bg-clicked-c
+        group-hover:bg-hover-c
+        group-active:bg-clicked-c
 }
 .card-test {
     @apply text-xl font-light h-auto sm:h-24
