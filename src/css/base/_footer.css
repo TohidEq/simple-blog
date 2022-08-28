@@ -1,0 +1,84 @@
+.footer {
+    @apply bg-darck-c-2 
+        text-white-c;
+}
+
+
+
+
+
+/*START social section >>>*/
+.footer-social{
+    @apply flex justify-center flex-wrap 
+        items-center gap-2.5 md:gap-11
+        pt-5;
+}
+
+.footer-title {
+    @apply text-2xl 
+        text-center w-full
+        font-light md:w-auto;
+}
+
+.footer-logos {
+    @apply flex justify-center flex-wrap w-full md:w-auto gap-2;
+}
+.footer-logos a{
+    @apply bg-white-c
+         p-1 w-6 h-6
+        rounded-full
+        transition-all duration-150
+        hover:bg-hover-c
+        hover:-translate-y-1  
+
+        active:bg-clicked-c
+        active:-translate-y-0.5
+        ;
+}
+.footer-logos a:hover{
+    box-shadow: 0px 4px 0px rgba(255,255, 255, 0.40)
+}
+.footer-logos a:active{
+    box-shadow: 0px 2px 5px rgba(255,255, 255, 0.25)
+}
+.footer-logos a svg{
+    @apply w-4 h-4  
+        fill-darck-c-2;
+}
+/*END social section <<<*/
+
+
+.footer-links {
+    @apply flex justify-center flex-wrap 
+        text-xl 
+        gap-x-10 gap-y-3 
+        py-6 md:py-9
+}
+.footer-links a{
+    @apply relative
+        font-light
+        hover:before:w-1/2
+        hover:before:left-1/4
+        hover:before:h-0.5
+        active:before:w-full
+        active:before:left-0
+        active:before:h-0.5;
+}
+.footer-links a::before{
+      content: '';
+      @apply bg-white-c
+        absolute transition-all
+        duration-200
+        w-0 h-0 rounded-lg
+        bottom-1 left-1/2;
+}
+
+
+
+.footer-copyright{
+    @apply text-center pb-3
+}
+.footer-copyright span{
+    @apply font-extralight text-lg
+        
+}
