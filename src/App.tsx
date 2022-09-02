@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Welcome from './components/Welcome';
 import Home from './components/Home';
 import Create from './components/Create';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path='/' element={<Welcome/>}/>
             <Route path='/home' element={<Home/>}/>
             <Route path='/create' element={<Create/>}/>
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
 
         <Footer />

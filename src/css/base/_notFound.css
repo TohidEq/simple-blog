@@ -1,0 +1,32 @@
+#not-found{
+    @apply container mx-auto
+    text-center min-h-[60vh];
+}
+#not-found h3{
+    @apply
+        text-3xl md:text-4xl lg:text-5xl font-medium relative
+        text-darck-c-2
+        text-center
+        mb-10 mt-20;
+}
+
+#not-found a{
+    
+    @apply relative
+        text-2xl md:text-3xl lg:text-4xl font-medium
+        hover:before:w-1/2
+        hover:before:left-1/4
+        active:before:w-full
+        active:before:left-0 
+        bg-dead-c p-2 rounded
+        hover:bg-hover-c
+        active:bg-clicked-c
+}
+#not-found a::before{
+      content: '';
+      @apply bg-darck-c-2
+        absolute transition-all
+        duration-200
+        w-2 h-1 rounded-lg
+        bottom-0 left-1/2;
+}

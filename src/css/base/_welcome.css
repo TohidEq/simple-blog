@@ -1,7 +1,8 @@
 .welcome {
     @apply container mx-auto
             lg:px-24 xl:px-32 2xl:px-44
-            transition-all duration-150;
+            transition-all duration-150
+            ;
 }
 .welcome *{
     @apply transition-all duration-150
