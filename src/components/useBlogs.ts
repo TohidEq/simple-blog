@@ -28,7 +28,7 @@ let defaultBlogs =
   id:1
 }];
 
-export default function Blogs() {
+export default function useBlogs() {
 
 
   const [data,setData] = React.useState<IBlog[]>

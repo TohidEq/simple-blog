@@ -539,6 +539,10 @@ video {
   padding-top: 7rem;
 }
 
+.\[author\:string\2c setAuthor\]{
+  author: string,setAuthor;
+}
+
 *{
   font-family: 'Quicksand', sans-serif;
 }
@@ -1372,6 +1376,27 @@ body{
 
 @media (min-width: 768px){
   .create form .title-box{
+    flex-wrap: nowrap;
+    column-gap: 1.25rem;
+  }
+}
+
+.create form .author-box{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 640px){
+  .create form .author-box{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .create form .author-box{
     flex-wrap: nowrap;
     column-gap: 1.25rem;
   }

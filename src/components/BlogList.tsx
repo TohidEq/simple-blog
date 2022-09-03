@@ -1,9 +1,6 @@
-import { type } from 'os';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-import { JsxEmit } from 'typescript';
-import Blogs from './Blogs';
+import useBlogs from './useBlogs';
 
 export interface IBlogListProps {
    
@@ -11,9 +8,9 @@ export interface IBlogListProps {
 
 const BlogList: React.FC<IBlogListProps> = () => {
   
-  const {data:blogs} = Blogs();
+  const {data:blogs} = useBlogs();
   const myElements = blogs.map((blog) => {
-    const { id,title,body,preview,author,date } = blog;
+    const { id,title,preview,author,date } = blog;
 
     return (
         <>

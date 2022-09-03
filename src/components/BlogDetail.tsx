@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {   Link, useParams } from 'react-router-dom';
-import Blogs from './Blogs';
+import Blogs from './useBlogs';
 export interface IBlogDetailProps {
     
 }
@@ -11,7 +11,7 @@ export default function BlogDetail () {
     const {data:blogs} = Blogs();
     const myElement = blogs.map((blog) => {
         const { id,title,body,preview,author,date } = blog;
-        if(id==blogId)
+        if(id===blogId)
         return (
             <>
                 <div className="blog-detail">
