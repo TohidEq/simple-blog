@@ -33,6 +33,8 @@
 */
 
 
+
+
 .home-card {
     @apply bg-darck-c-2 text-white-c rounded  relative
 
@@ -61,8 +63,8 @@
         group-hover:bg-hover-c
         group-active:bg-clicked-c
 }
-.card-test {
-    @apply text-xl font-light h-auto sm:h-24
+.card-text {
+    @apply text-xl font-light h-auto sm:h-36 overflow-hidden
 }
 
 .card-info {

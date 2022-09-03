@@ -1,11 +1,21 @@
+
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import BlogList from './BlogList';
 
 export interface IWelcomeProps {
 }
 
-export default function Welcome (props: IWelcomeProps) {
+
+
+
+
+
+export default function Welcome () {
+  //
+  
   return (
+  <>
     <div className='welcome'>
       <h1>Welcome</h1>
       <div className="">
@@ -24,8 +34,16 @@ export default function Welcome (props: IWelcomeProps) {
           </div>
           
         </div>
+       
+      </div>
+      
+    </div>
+    <div className="home pt-28">
+      <h1>Last Blogs</h1>
+      <div className="home-cards">
+        <BlogList />
       </div>
     </div>
-
+  </>
   );
 }
