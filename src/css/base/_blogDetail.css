@@ -40,3 +40,41 @@
         active:bg-white-c;
     
 }
+
+.blog-delete {
+    @apply bg-darck-c-2 bg-opacity-25 text-darck-c-2
+    relative
+    p-2 mt-2 rounded-lg overflow-hidden
+    hover:bg-clicked-c active:bg-dead-c
+}
+
+
+
+
+
+.blog-delete button{
+    @apply 
+
+        bg-darck-c-2 text-white-c
+        block mx-auto mt-2
+        sm:inline-block sm:ml-2 sm:mt-0
+        px-1 rounded
+        
+        transition-all duration-150
+        opacity-0
+
+        text-center
+
+        hover:-translate-y-1  
+        hover:bg-hover-c hover:text-darck-c-2
+
+        active:bg-clicked-c 
+        active:-translate-y-0.5
+        ;
+}
+.blog-delete button:hover{
+    box-shadow: 0px 4px 0px rgba(0,0, 0, 0.40)
+}
+.blog-delete button:active{
+    box-shadow: 0px 2px 5px rgba(0,0, 0, 0.25)
+}

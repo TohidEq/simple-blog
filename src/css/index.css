@@ -535,12 +535,22 @@ video {
   margin-right: auto;
 }
 
+.translate-x-\[800px\]{
+  --tw-translate-x: 800px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .pt-28{
   padding-top: 7rem;
 }
 
-.\[author\:string\2c setAuthor\]{
-  author: string,setAuthor;
+.group:hover .group-hover\:translate-x-0{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 *{
@@ -1643,6 +1653,79 @@ body{
 .blog-author a:active{
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+
+.blog-delete{
+  position: relative;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: rgb(52 52 52 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity));
+}
+
+.blog-delete:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 210 139 / var(--tw-bg-opacity));
+}
+
+.blog-delete:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 220 217 / var(--tw-bg-opacity));
+}
+
+.blog-delete button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  display: block;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 52 52 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.blog-delete button:hover{
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 220 190 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity));
+}
+
+.blog-delete button:active{
+  --tw-translate-y: -0.125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 210 139 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px){
+  .blog-delete button{
+    margin-left: 0.5rem;
+    margin-top: 0px;
+    display: inline-block;
+  }
+}
+
+.blog-delete button:hover{
+  box-shadow: 0px 4px 0px rgba(0,0, 0, 0.40)
+}
+
+.blog-delete button:active{
+  box-shadow: 0px 2px 5px rgba(0,0, 0, 0.25)
 }
 
 #not-found{

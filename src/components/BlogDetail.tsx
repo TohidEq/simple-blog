@@ -32,6 +32,11 @@ export default function BlogDetail () {
                             <div className="blog-date">{date}</div>
                         </div>
                     </div>
+
+                    <div className="blog-delete group ">
+                        <label htmlFor="">I want to delete(click me)</label>
+                        <button className='translate-x-[800px] group-hover:translate-x-0 group-hover:opacity-100'>DELETE</button>
+                    </div>
                 </div>
             </>
             
