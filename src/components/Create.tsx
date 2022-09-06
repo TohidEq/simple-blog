@@ -47,7 +47,7 @@ export default function Create (props: ICreateProps) {
     if(valid){
       
       AddBlog({newBlog,blogs})
-      navigate("/");
+      navigate("/home");
     }else{
       alert("pls fill all")
     }
