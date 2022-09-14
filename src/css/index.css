@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -544,6 +544,10 @@ video {
   padding-top: 7rem;
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .group:hover .group-hover\:translate-x-0{
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -553,8 +557,24 @@ video {
   opacity: 1;
 }
 
-*{
-  font-family: 'Quicksand', sans-serif;
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* sticky footer(to bottom) */
+
+body{
+  height: 100vh;
+}
+
+#root{
+  height: 100vh;
+}
+
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .navbar{
